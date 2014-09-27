@@ -11,7 +11,7 @@ $usuario->setLogin($_POST['login']);
 if ($_POST['senha'] == $_POST['senha2']) {
     $usuario->setSenha($_POST['senha']);
     $usuario->inserirUsuario();
-    header('Location : index.php?pagina=formulario_usuario');
+    header('Location:index.php?pagina=formulario_usuario');
 } else {
     echo 'Senhas nao conferem';
 }

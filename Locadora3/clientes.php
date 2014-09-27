@@ -17,8 +17,5 @@ $cliente->nascimento = $_POST['nascimento'];
 
 $cliente->salvarCliente();
 
-header ('Location: index.php?pagina=formulario_clientes');
-
-date ('y-m-d', strtotime($time));
-
+header('Location: index.php?pagina=formulario_clientes');
 ?>

@@ -1,6 +1,16 @@
 <?php
 include_once 'classes\Usuario.class.php';
 
+
+if ((!isset($_SESSION['login']) == true) && (!isset($_SESSION['senha']) == true)) {
+    unset($_SESSION['login']);
+    unset($_SESSION['senha']);
+    header('location:login.php');
+}
+
+$logado = $_SESSION['login'];
+
+
 $objUsuario = new Usuario();
 $listarUsuario = $objUsuario->listarUsuario();
 
@@ -12,8 +22,8 @@ if (isset($_GET['idUsuario'])) {
 }
 ?>
 
-<fieldset>
-    <legend><strong>Cadastrar Usuário</strong></legend>
+<fieldset class="fie">
+    <legend class="legend"><strong>Cadastrar Usuário</strong></legend>
     <form action="usuario.php" method="post">
         <input type="hidden" name="idusuario" value="<?php echo $usuario['idUsuario'] ?>">
         <label>Nome de Login:</label>

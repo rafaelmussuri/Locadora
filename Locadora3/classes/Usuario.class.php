@@ -55,6 +55,15 @@ class Usuario {
         return $dados = ConexaoBD::buscarPorId($sql);
     }
 
+    public function buscarUsuario() {
+
+
+        $sql = "SELECT * FROM locadora.usuario WHERE nome='$this->login' AND senha='$this->senha'";
+
+
+        return $dados = ConexaoBD::buscarPorId($sql);
+    }
+
     public function alterarUsuario() {
 
         $sql = "INSERT INTO `locadora`.`usuario` (`usuario`, `senha`) 
@@ -69,7 +78,7 @@ class Usuario {
 
         ConexaoBD::excluirBanco($sql);
     }
-    
+
     public function salvarUsuario() {
         if ($this->idUsuario == '') {
             $this->inserirUsuario();
