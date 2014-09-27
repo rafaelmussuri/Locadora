@@ -39,7 +39,7 @@ if (isset($_GET['idUsuario'])) {
     </form>
 </fieldset>
 
-<table border="1">
+<table border="1" class="tabela">
     <thead>
     <th>Nome de Usuário:</th>
     <th>Ações</th>

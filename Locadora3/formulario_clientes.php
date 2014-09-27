@@ -58,7 +58,7 @@ if (isset($_GET['idCliente'])) {
     </form>
 </fieldset>
 
-<table border="1">
+<table border="1" class="tabela">
     <thead>
         <tr>
             <th>Nome</th>

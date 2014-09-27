@@ -66,7 +66,7 @@ $listaLocacao = $objLocacao->listarLocacao();
     </form>
 </fieldset>
 
-<table border="1">
+<table border="1" class="tabela">
     <thead>
     <th>Nome do Cliente</th>
     <th>Filme</th>

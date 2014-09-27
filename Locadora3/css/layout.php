@@ -61,17 +61,19 @@
         border-bottom:3px solid #EA0000;
     }
 
-    .legend{
-
-
+    .tabela{
+        margin-left: auto;
+        margin-right: auto;
+        width: 71.8%;
     }
+
 
     .fie {
         margin-left: auto;
         margin-right: auto;
         width: 70%;
     }
-    
+
     .fie label{
         margin-left: auto;
         margin-right: auto;

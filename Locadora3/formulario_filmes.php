@@ -65,7 +65,7 @@ if (isset($_GET['idFilme'])) {
     </form>
 </fieldset>
 
-<table border="1">
+<table border="1" class="tabela">
     <thead>
         <tr>
             <th>Titulo</th>
