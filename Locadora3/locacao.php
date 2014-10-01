@@ -14,5 +14,5 @@ $objLocacao->setDevolucao($_POST['devolucao']);
 
 $objLocacao->inserirLocacao();
 
-header('Location : index.php?pagina=formulario_locacao');
+header('Location: index.php?pagina=formulario_locacao');
 ?>
