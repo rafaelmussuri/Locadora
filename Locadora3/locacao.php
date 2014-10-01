@@ -7,7 +7,7 @@ var_dump($_POST);
 $objLocacao = new Locacao();
 
 $objLocacao->setIdCliente($_POST['idCliente']);
-$objLocacao->setIdFilmes($_POST['titulo']);
+$objLocacao->setIdFilmes($_POST['idFilme']);
 $objLocacao->setValorLocacao($_POST['valorLocacao']);
 $objLocacao->setLocacao($_POST['locacao']);
 $objLocacao->setDevolucao($_POST['devolucao']);
